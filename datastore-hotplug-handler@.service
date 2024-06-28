@@ -1,0 +1,3 @@
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/pbs_datastore_hotplug_handler.sh %i

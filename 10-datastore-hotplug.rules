@@ -1,0 +1,1 @@
+KERNEL=="sdd", ACTION=="add", SUBSYSTEM=="block", SUBSYSTEMS=="scsi", ATTRS{vendor}=="ASMT    ", TAG+="systemd", ENV{SYSTEMD_WANTS}="datastore-hotplug-handler@sdd.service"
