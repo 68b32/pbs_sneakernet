@@ -9,7 +9,7 @@ jobtype="$1"
 jobid="$2"
 
 echo "$jobtype" | grep -P 'sync|verify|prune' &> /dev/null
-[ $? -ne 0 ] && out "Jobtype must be \"sync\" or \"verify\"" 1
+[ $? -ne 0 ] && out "Jobtype must be \"sync\", \"verify\" or \"prune\"" 1
 [ -z "$jobid" ] && out "No jobid given." 1
 
 echo "Starting job $jobid..."
